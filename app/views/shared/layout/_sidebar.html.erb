@@ -35,6 +35,12 @@
               <p>
                 <%= agenda.title %>
                 <i class="right fa fa-angle-left"></i>
+                <li class="nav-item has-treeview menu-open">
+                <div class="d-inline p-2 text-white">
+                <i class="fa fa-circle-o nav-icon "></i><span  style="margin-right: 2rem;"><%= agenda.title %></span>
+                <%= link_to 'Delete', agenda, method: :delete, data: { confirm: 'Are you sure?'}, class:"btn btn-danger" %>
+                </div>
+                </li>
               </p>
             </a>
             <ul class="nav nav-treeview" style="display: block;">
